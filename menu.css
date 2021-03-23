@@ -1,0 +1,99 @@
+.navMenu{
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    overflow: hidden;
+    animation: menuAnimate 1s 1;
+    background-color: #1A1A1A;
+}
+
+@keyframes menuAnimate{
+    0%{
+        left: 100vw;
+        height: 0vh;
+        width: 0vw;
+    }
+
+
+    100%{
+        height: 100vh;
+        width: 100vw;
+    }
+}
+
+
+.navContent{
+    position: absolute;
+    top: 3rem;
+    left: 17vw;
+    z-index: 10;
+    font-size: 1.5rem;
+    display: flex;
+    font-family: poppins;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 65vw;
+    height: 90vh;
+    overflow: hidden;
+    align-items: center;
+}
+
+
+.line{
+    width: 90vw;
+    height: 0.1rem;
+    background-color: grey;
+}
+
+
+.homeText{
+    color: #bdbdbd;
+    transition: 0.2s;
+}
+
+.homeText:hover{
+    cursor: pointer;
+    color: white;
+}
+
+
+
+
+.labText{
+    color: #bdbdbd;
+    transition: 0.2s;
+}
+
+.labText:hover{
+    cursor: pointer;
+    color: white;
+}
+
+
+
+
+
+.aboutText{
+    color: #bdbdbd;
+    transition: 0.2s;
+}
+
+.aboutText:hover{
+    cursor: pointer;
+    color: white;
+}
+
+
+
+.contactText{
+    color: #bdbdbd;
+    transition: 0.2s;
+}
+
+.contactText:hover{
+    cursor: pointer;
+    color: white;
+}

@@ -1,0 +1,296 @@
+body{
+    background-color: #000;
+    overflow-x: hidden;
+}
+
+
+.website{
+    display: none;
+    position: absolute;
+}
+
+.preloader{
+    display: block;
+}
+
+.menuOpen{
+    position: absolute;
+    top: 0.7rem;
+    right: 0rem;
+    height: 1.8rem;
+    background-color: white;
+}
+
+.nav{
+    display: flex;
+    width: 100vw;
+    height: 3rem;
+    top: 0rem;
+    left: 0rem;
+    overflow: hidden;
+    position: absolute;
+    justify-content: space-around;
+    z-index: 2;
+}
+
+.navLogo{
+    position: absolute;
+    display: flex;
+    width: 2.5rem;
+    height: 2.5rem;
+    left: 2vw;
+    opacity: 0.7;
+    transition: 0.2s;
+    padding-bottom: 1rem;
+    padding-top: 0.8rem;
+}
+
+.navLogo:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+.hamburgerMenu{
+    position: absolute;
+    display: flex;
+    background-color: transparent;
+    width: 3rem;
+    height: 1.7rem;
+    right: 5vw;
+    top: 1rem;
+    opacity: 0.7;
+    transform: scale(-1, 1);
+    transition: all 0.2s;
+}
+
+.rectangle1{
+    position: absolute;
+    display: flex;
+    width: 2.5rem;
+    height: 0.15rem;
+    background-color: white;
+    top: 0.2rem;
+    left: 0rem;
+    transition: 0.2s;
+}
+
+.rectangle2{
+    position: absolute;
+    display: flex;
+    width: 1.5rem;
+    height: 0.15rem;
+    background-color: white;
+    left: 0rem;
+    bottom: 0.8rem;
+    transition: 0.2s;
+}
+
+.rectangle3{
+    position: absolute;
+    display: flex;
+    width: 2.5rem;
+    height: 0.15rem;
+    background-color: white;
+    bottom: 0.3rem;
+    left: 0rem;
+    transition: all 0.2s;
+}
+
+
+.hamburgerMenu:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+
+.hamburgerMenu:hover .rectangle2{
+    top: 0.7rem;
+    width: 2.4rem;
+}
+
+
+.hamburgerMenu:hover .rectangle3{
+    top: 1.2rem;
+}
+
+
+.menuOpen1{
+    transform: rotate(50deg);
+    top: 1rem;
+    width: 2rem;
+}
+
+
+.menuOpen2{
+    transform: rotate(-50deg);
+    top: 1rem;
+    width: 2rem;
+}
+
+
+.menuOpen3{
+    width: 2rem;
+    left: 2rem;
+    opacity: 0;
+}
+
+
+.menuOpen3:hover{
+    width: 2rem;
+}
+
+
+@media only screen and (max-width: 730px){
+
+    .navLogo{
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .hamburgerMenu{
+        width: 2rem;
+        height: 1.3rem;
+    }
+
+    .rectangle1{
+        width: 2rem;
+    }
+
+    .rectangle2{
+        display: none;
+    }
+
+    .rectangle3{
+        width: 2rem;
+    }
+
+
+    .hamburgerMenu:hover .rectangle3{
+        top: 0.83rem;
+    }
+
+    .menuOpen{
+        top: 0.7rem;
+        height: 1.8rem;
+    }
+
+    .menuOpen2{
+        display: block;
+    }
+
+}
+
+
+@media only screen and (max-width: 730px){
+
+    .navLogo{
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .hamburgerMenu{
+        width: 2rem;
+        height: 1.3rem;
+    }
+
+    .rectangle1{
+        width: 2rem;
+    }
+
+    .rectangle2{
+        display: none;
+    }
+
+    .rectangle3{
+        width: 2rem;
+    }
+
+
+    .hamburgerMenu:hover .rectangle3{
+        top: 0.83rem;
+    }
+
+    .menuOpen2{
+        display: block;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 400px){
+
+    .navLogo{
+        width: 2rem;
+        height: 2rem;
+        left: 2rem;
+    }
+
+    .hamburgerMenu{
+        width: 2rem;
+        height: 1.3rem;
+        right: 2rem;
+
+    }
+
+    .rectangle1{
+        width: 2rem;
+    }
+
+    .rectangle2{
+        display: none;
+    }
+
+    .rectangle3{
+        width: 2rem;
+    }
+
+
+    .hamburgerMenu:hover .rectangle3{
+        top: 0.83rem;
+    }
+
+    .menuOpen2{
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 330px){
+
+    .navLogo{
+        width: 1.7rem;
+        height: 1.7rem;
+        left: 1rem;
+    }
+
+    .hamburgerMenu{
+        top: 0.9rem;
+        width: 2rem;
+        height: 1.3rem;
+    }
+
+    .menuOpen1{
+        width: 1.5rem;
+    }
+
+    .menuOpen2{
+        width: 1.5rem;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 1550px){
+
+    .navLogo{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .hamburgerMenu{
+        display: none;
+    }
+}
