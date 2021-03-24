@@ -6,7 +6,7 @@
     height: 100vh;
     display: none;
     overflow: hidden;
-    animation: menuAnimate 1s 1;
+    animation: menuAnimate 0.3s 1;
     background-color: #1A1A1A;
 }
 
