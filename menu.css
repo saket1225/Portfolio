@@ -1,5 +1,5 @@
 .navMenu{
-    position: absolute;
+    position: fixed;
     top: 0rem;
     left: 0rem;
     width: 100vw;
@@ -8,19 +8,18 @@
     overflow: hidden;
     animation: menuAnimate 0.3s 1;
     background-color: #1A1A1A;
+    z-index: 1;
+    width: 100vw;
 }
 
 @keyframes menuAnimate{
     0%{
-        left: 100vw;
         height: 0vh;
-        width: 0vw;
     }
 
 
     100%{
         height: 100vh;
-        width: 100vw;
     }
 }
 
@@ -96,4 +95,45 @@
 .contactText:hover{
     cursor: pointer;
     color: white;
+}
+
+
+.menuMoon{
+    position: absolute;
+    z-index: 1;
+    width: 25rem;
+    left: 65vw;
+    top: 60vh;
+    opacity: 0.2;
+    max-width: 25rem;
+}
+
+
+@media only screen and (max-width: 600px){
+    .menuMoon{
+        top: 55vh;
+        transform: translateY(-50%);
+        left: 15vw;
+        opacity: 0.1;
+    }
+}
+
+
+@media only screen and (max-width: 500px){
+    .menuMoon{
+        top: 55vh;
+        transform: translateY(-50%);
+        left: 15vw;
+        width: 20rem;
+        opacity: 0.1;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 400px){
+    .menuMoon{
+        left: 1rem;
+    }
 }

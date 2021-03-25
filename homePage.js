@@ -17,6 +17,8 @@ var menu = document.querySelector(".navMenu")
 
 var hamburgerOpenClass = false;
 
+var toggler = document.querySelector(".toggler")
+
 
 hamburger.addEventListener('click' , () => {
 
@@ -25,6 +27,8 @@ hamburger.addEventListener('click' , () => {
         rectangle2.classList.add('menuOpen2')
         rectangle3.classList.add('menuOpen3')
         hamburger.classList.add('menuOpen')
+
+        toggler.style.left = "49vw"
 
         menu.style.display = "flex";
         hamburgerOpenClass = true;
@@ -37,8 +41,30 @@ hamburger.addEventListener('click' , () => {
         rectangle3.classList.remove('menuOpen3')
         hamburger.classList.remove('menuOpen')
 
+        toggler.style.left = "85vw"
+
         menu.style.display = "none";
         hamburgerOpenClass = false;
     }
 })
 
+
+var button = document.querySelector(".button")
+
+var light = false;
+
+
+toggler.addEventListener('click', () => {
+    if (light == false){
+        button.classList.add('dayMode')
+        toggler.classList.add('togglerMoon')
+        light = true;
+    }
+
+    else if (light == true){
+        button.classList.remove('dayMode')
+        toggler.classList.remove('togglerMoon')
+        light = false;
+    }
+
+})
