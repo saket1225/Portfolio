@@ -20,6 +20,8 @@ var hamburgerOpenClass = false;
 var toggler = document.querySelector(".toggler")
 
 
+toggler.classList.add('togglerHome')
+
 hamburger.addEventListener('click' , () => {
 
     if (hamburgerOpenClass == false){
@@ -28,7 +30,9 @@ hamburger.addEventListener('click' , () => {
         rectangle3.classList.add('menuOpen3')
         hamburger.classList.add('menuOpen')
 
-        toggler.style.left = "49vw"
+
+        toggler.classList.add('togglerNav')
+        toggler.classList.remove('togglerHome')
 
         menu.style.display = "flex";
         hamburgerOpenClass = true;
@@ -41,7 +45,8 @@ hamburger.addEventListener('click' , () => {
         rectangle3.classList.remove('menuOpen3')
         hamburger.classList.remove('menuOpen')
 
-        toggler.style.left = "85vw"
+        toggler.classList.add('togglerHome')
+        toggler.classList.remove('togglerNav')
 
         menu.style.display = "none";
         hamburgerOpenClass = false;

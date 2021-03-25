@@ -156,7 +156,6 @@ body{
     display: flex;
     position: absolute;
     top: 0.7rem;
-    left: 85vw;
     transform: translateX(-50%);
     width: 4.5rem;
     height: 2rem;
@@ -220,6 +219,21 @@ body{
     pointer-events: none;
 }
 
+.togglerNav{
+    left: 49vw;
+}
+
+.togglerHome{
+    left: 85vw;
+}
+
+@media only screen and (max-width: 1000px){
+    .togglerHome{
+        left: 82vw;
+    }
+}
+
+
 @media only screen and (max-width: 730px){
 
     .navLogo{
@@ -258,6 +272,14 @@ body{
         display: block;
     }
 
+    .toggler{
+        top: 0.4rem;
+    }
+
+    .togglerHome{
+        left: 78vw;
+    }
+
 }
 
 
@@ -294,8 +316,51 @@ body{
         display: block;
     }
 
+    .togglerHome{
+        left: 75vw;
+    }
+
 }
 
+
+@media only screen and (max-width: 500px){
+    .togglerHome{
+        left: 73vw;
+    }
+}
+
+
+@media only screen and (max-width: 410px){
+    .togglerHome{
+        left: 67vw;
+    }
+
+    .toggler{
+        top: 0.6rem;
+    }
+}
+
+
+@media only screen and (max-width: 378px){
+    .togglerHome{
+        left: 60vw;
+    }
+
+    .toggler{
+        top: 0.6rem;
+    }
+}
+
+
+@media only screen and (max-width: 300px){
+    .togglerHome{
+        left: 55vw;
+    }
+
+    .toggler{
+        top: 0.6rem;
+    }
+}
 
 
 @media only screen and (max-width: 400px){
