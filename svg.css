@@ -1,0 +1,38 @@
+svg {
+    font-family: poppins;
+    position: absolute;
+    width: 100%; height: 100%;
+    z-index: 30;
+    top: -8rem;
+    display: none;
+    transition: 0.3s all;
+}
+
+svg text {
+    text-transform: uppercase;
+    animation: stroke 5s infinite alternate;
+    stroke-width: 2;
+    stroke: #365fa0;
+    font-size: 9rem;
+    left: 2rem;
+    z-index: 40;
+}
+
+@keyframes stroke {
+    0%   {
+        fill: rgba(72,138,20,0); stroke: rgba(54,95,160,1);
+        stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+    }
+    70%  {fill: rgba(72,138,20,0); stroke: rgba(116, 81, 255, 1); }
+    80%  {fill: rgba(72,138,20,0); stroke: rgba(116, 81, 255, 1); stroke-width: 3; }
+    100% {
+        fill: rgba(116, 81, 255, 1); stroke: rgba(54,95,160,0);
+        stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+    }
+}
+
+
+
+.hoverName{
+    display: block;
+}

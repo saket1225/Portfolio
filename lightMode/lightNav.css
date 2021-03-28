@@ -1,0 +1,43 @@
+.dayMenu{
+    background-color: #f2f2F3;
+}
+
+.dayNav{
+    background-image: linear-gradient(to bottom, #fff, rgba(240, 240, 240,0));
+}
+
+.lightMode1{
+    background-color: #050505;
+}
+
+
+.lightMode2{
+    background-color: #050505;
+}
+
+
+.lightMode3{
+    background-color: #050505;
+}
+
+
+.lightHome{
+     color: black;
+     opacity: 0.6;
+}
+
+.lightLab{
+     color: black;
+     opacity: 0.6;
+}
+
+.lightAbout{
+     color: black;
+     opacity: 0.6;
+}
+
+
+.lightContact{
+     color: black;
+     opacity: 0.6;
+}

@@ -1,0 +1,204 @@
+.mainMoon{
+    position: absolute;
+    display: flex;
+    width: 23rem;
+    height: 23rem;
+    border-radius: 11.5rem;
+    background-color: #d6d6d6;
+    left: 78vw;
+    top: 6rem;
+    transform: translateX(-50%);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+
+.spot1{
+    position: absolute;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 2.5rem;
+    background-color: #b5b5b5;
+    left: 4rem;
+    top: 7rem;
+}
+
+
+.spot2{
+    position: absolute;
+    width: 4rem;
+    height: 3rem;
+    border-radius: 2.5rem;
+    background-color: #b5b5b5;
+    left: 4rem;
+    top: 7rem;
+}
+
+
+.spot3{
+    position: absolute;
+    width: 3.5rem;
+    height: 5rem;
+    border-radius: 2.5rem;
+    background-color: #b5b5b5;
+    left: 13rem;
+    top: 2rem;
+}
+
+
+.spot4{
+    position: absolute;
+    width: 3.5rem;
+    height: 2.5rem;
+    border-radius: 2.5rem;
+    background-color: #b5b5b5;
+    left: 8rem;
+    top: 18rem;
+}
+
+
+.stars{
+    width: 95vw;
+    height: 32rem;
+    position: absolute;
+    color: white;
+}
+
+
+.star1{
+    position: absolute;
+    top: 9rem;
+    left: 20rem;
+}
+
+
+.star2{
+    position: absolute;
+    top: 1rem;
+    left: 10rem;
+}
+
+.star3{
+    position: absolute;
+    top: 12rem;
+    left: 30rem;
+}
+
+
+.star4{
+    position: absolute;
+    top: 19rem;
+    left: 48rem;
+}
+
+
+.star5{
+    position: absolute;
+    top: 20rem;
+    left: 32rem;
+}
+
+.text{
+    position: absolute;
+    width: 30rem;
+    height: 15rem;
+    top: 10rem;
+    left: 7rem;
+    color: #9DA3BB;
+    font-size: 1.1rem;
+    font-family: montserrat;
+    font-weight: 500;
+    background-color: transparent;
+}
+
+
+.hi{
+    position: absolute;
+    font-weight: 400;
+    top: -0.4rem;
+}
+
+.name{
+    position: absolute;
+    left: 9rem;
+    color: #7451FF;
+    font-size: 3rem;
+    top: -1.5rem;
+    font-weight: 600;
+    width: 10rem;
+    z-index: 45;
+    transition: 0.3s all ease-out;
+}
+
+
+.a{
+    position: absolute;
+    top: 3.5rem;
+    font-weight: 400;
+}
+
+.heroSkills{
+    position: relative;
+    color: #7451FF;
+    font-size: 2.5rem;
+    font-weight: 600;
+    top: -2rem;
+    left: 2.3rem;
+    transition: 0.2s all;
+}
+
+
+.big1{
+    position: absolute;
+    color: #f0f0f0;
+    left: 55vw;
+    font-size: 3rem;
+    top: 15rem;
+    font-family: chango;
+    transition: 0.4s;
+    transform: rotate(70deg);
+}
+
+.big1:hover{
+    transform: rotate(280deg);
+}
+
+.big2{
+    position: absolute;
+    color: #f0f0f0;
+    left: 92vw;
+    font-size: 3rem;
+    top: 5rem;
+    font-family: chango;
+    transform: rotate(10deg);
+    transition: 0.4s;
+}
+
+.big2:hover{
+    transform: rotate(90deg);
+
+}
+
+.big3{
+    position: absolute;
+    color: #f0f0f0;
+    left: 59vw;
+    font-size: 3rem;
+    top: 3rem;
+    font-family: chango;
+    transition: 0.4s;
+}
+
+.big3:hover{
+    transform: rotate(130deg);
+
+}
+
+
+.hoverNameText{
+    opacity: 0;
+}
+
+.moonDiv{
+    z-index: 199;
+}
