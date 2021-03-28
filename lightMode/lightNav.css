@@ -4,6 +4,7 @@
 
 .dayNav{
     background-image: linear-gradient(to bottom, #fff, rgba(240, 240, 240,0));
+    animation: navAnime 0.5s 1;
 }
 
 .lightMode1{
@@ -40,4 +41,14 @@
 .lightContact{
      color: black;
      opacity: 0.6;
+}
+
+@keyframes navAnime{
+    0%{
+        background-image: linear-gradient(to bottom, #000, rgba(0,0,0,0));
+    }
+
+    100%{
+        background-image: linear-gradient(to bottom, #fff, rgba(240, 240, 240,0));
+    }
 }

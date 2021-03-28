@@ -62,6 +62,9 @@
     height: 32rem;
     position: absolute;
     color: white;
+    -moz-user-select: none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
 }
 
 
@@ -157,6 +160,9 @@
     font-family: chango;
     transition: 0.4s;
     transform: rotate(70deg);
+    -moz-user-select: none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
 }
 
 .big1:hover{
@@ -172,6 +178,9 @@
     font-family: chango;
     transform: rotate(10deg);
     transition: 0.4s;
+    -moz-user-select: none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
 }
 
 .big2:hover{
@@ -187,6 +196,9 @@
     top: 3rem;
     font-family: chango;
     transition: 0.4s;
+    -moz-user-select: none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
 }
 
 .big3:hover{
@@ -201,4 +213,122 @@
 
 .moonDiv{
     z-index: 199;
+}
+
+.lighthouse{
+    position:absolute;
+    width: 23rem;
+    left: 65vw;
+    top: 12rem;
+    z-index: 30;
+    filter: saturate(60%);
+    -moz-user-select: none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+}
+
+.heroSkills{
+    top: 3rem;
+    left: 2.5rem;
+}
+
+.workButton{
+    position: absolute;
+    top: 23rem;
+    left: 7rem;
+    width: 15rem;
+    height: 3rem;
+    border-radius: 10rem;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.backgroundButton{
+    position: absolute;
+    width: 15rem;
+    height: 3rem;
+    background-color: #6C69DC;
+    opacity: 0.2;
+    z-index: -1;
+    transition: 0.3s all;
+}
+
+.viewText{
+    position: absolute;
+    font-family: poppins;
+    color: white;
+    top: -0.8rem;
+    left: 1.5rem;
+    pointer-events: none;
+}
+
+.arrowWork{
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 0.6rem;
+    left: 10.5rem;
+    pointer-events: none;
+    transition: 0.3s all;
+    -moz-user-select: none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+}
+
+.rotatedArrowOfWork{
+    transform: rotate(90deg);
+}
+
+.workBackgroundOnHover{
+    opacity: 0.6;
+}
+
+.mouseDown{
+    position: absolute;
+    width:7rem;
+    height: 5rem;
+    top:80vh;
+    left:43vw;
+    -moz-user-select: none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+}
+
+.backOfMouse{
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    left: 1.7rem;
+    pointer-events: none;
+}
+
+.scrollMouse{
+    position: absolute;
+    top: 0.5rem;
+    left: 3rem;
+    width: 0.5rem;
+    height: 1rem;
+    background-color: #f0f0f0;
+    border-radius: 100rem;
+    animation: manimation 0.5s infinite;
+    pointer-events: none;
+}
+
+.scrollDownText{
+    font-size: 0.9rem;
+    font-family: poppins;
+    color: white;
+    position: absolute;
+    top: 1.8rem;
+    pointer-events: none;
+}
+
+@keyframes manimation{
+    0%,100%{
+        top: 0.4rem;
+    }
+
+    50%{
+        top: 0.6rem;
+    }
 }

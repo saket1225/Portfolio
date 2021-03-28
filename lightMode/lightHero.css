@@ -1,0 +1,40 @@
+.lightMode{
+    background-color: #F6F6F6;
+    animation: bodyAnime 0.3s 1;
+
+}
+
+.sunH{
+    background-color: #FFD06C;
+}
+
+.lightHi{
+    color: #464646;
+}
+
+.lightA{
+    color: #464646;
+}
+
+.ultraLightHouse{
+    filter: saturate(120%);
+}
+
+.lightBackgroundWork{
+    opacity: 0.3;
+    background-color: #0500FF;
+}
+
+@keyframes bodyAnime{
+    0%{
+        background-color: #02011e;
+    }
+
+    100%{
+        background-color: #F6F6F6;
+    }
+}
+
+.lightScrollText{
+    color: black;
+}

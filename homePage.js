@@ -27,12 +27,24 @@ let homeText = document.querySelector('.homeText')
 let labText = document.querySelector('.labText')
 let aboutText = document.querySelector('.aboutText')
 let contactText = document.querySelector('.contactText')
-
+let lightHouse = document.querySelector('.lighthouse')
+let body = document.querySelector('body')
+let mainMoon = document.querySelector('.mainMoon')
+let spot1 = document.querySelector('.spot1')
+let spot2 = document.querySelector('.spot2')
+let spot3 = document.querySelector('.spot3')
 
 var cursor = document.querySelector('.cursor')
 var cursorCircle = document.querySelector('.cursorCircle')
 
+let hi = document.querySelector('.hi')
+let aText = document.querySelector('.a')
 
+let heroWorkButton = document.querySelector('.workButton')
+
+let heroWorkButtonBackground = document.querySelector('.backgroundButton')
+
+let heroButtonArrow = document.querySelector('.arrowWork')
 
 toggler.classList.add('togglerHome')
 
@@ -69,6 +81,7 @@ hamburger.addEventListener('click' , () => {
 
 
 var button = document.querySelector(".button")
+let scrollDownText = document.querySelector('.scrollDownText')
 
 var light = false;
 
@@ -89,8 +102,25 @@ toggler.addEventListener('click', () => {
         rectangle2.classList.add('lightMode2')
         rectangle3.classList.add('lightMode3')
 
+
         cursor.classList.add('lightCursor')
         cursorCircle.classList.add('lightCursorCircle')
+
+        body.classList.add('lightMode')
+
+        mainMoon.classList.add('sunH');
+        spot1.classList.add('sunH');
+        spot2.classList.add('sunH');
+        spot3.classList.add('sunH');
+
+        aText.classList.add('lightA')
+        hi.classList.add('lightHi')
+
+        lightHouse.classList.add('ultraLightHouse')
+
+        heroWorkButtonBackground.classList.add('lightBackgroundWork')
+
+        scrollDownText.classList.add('lightScrollText')
 
         light = true;
     }
@@ -113,6 +143,22 @@ toggler.addEventListener('click', () => {
 
         cursor.classList.remove('lightCursor')
         cursorCircle.classList.remove('lightCursorCircle')
+
+        body.classList.remove('lightMode')
+
+        mainMoon.classList.remove('sunH');
+        spot1.classList.remove('sunH');
+        spot2.classList.remove('sunH');
+        spot3.classList.remove('sunH');
+
+        aText.classList.remove('lightA')
+        hi.classList.remove('lightHi')
+
+        lightHouse.classList.remove('ultraLightHouse')
+
+        heroWorkButtonBackground.classList.remove('lightBackgroundWork')
+
+        scrollDownText.classList.remove('lightScrollText')
 
         light = false;
     }
@@ -144,6 +190,18 @@ toggler.addEventListener("mouseleave", () => {
 
 
 
+navLogo.addEventListener("mouseover", () => {
+    cursor.classList.add("hoverCursor")
+})
+
+
+navLogo.addEventListener("mouseleave", () => {
+    cursor.classList.remove("hoverCursor")
+})
+
+
+
+
 hamburger.addEventListener("mouseover", () => {
     cursor.classList.add("hoverCursor")
 })
@@ -157,6 +215,7 @@ hamburger.addEventListener("mouseleave", () => {
 let name = document.querySelector('.name')
 let svg = document.querySelector('.svgName')
 let moon = document.querySelector('.moonDiv')
+let mouse = document.querySelector('.mouseDown')
 
 
 name.addEventListener("mouseover", () => {
@@ -186,4 +245,57 @@ moon.addEventListener("mouseleave", () => {
     cursorCircle.classList.remove("circleOverMoon")
     cursor.classList.remove("cursorOverMoon")
 })
+
+lightHouse.addEventListener("mouseover", () => {
+    cursorCircle.classList.add("circleOverMoon");
+    cursor.classList.add("cursorOverMoon");
+})
+
+
+lightHouse.addEventListener("mouseleave", () => {
+    cursorCircle.classList.remove("circleOverMoon")
+    cursor.classList.remove("cursorOverMoon")
+})
+
+
+
+heroWorkButton.addEventListener("mouseover", () => {
+    cursor.classList.add("hoverCursor")
+})
+
+
+heroWorkButton.addEventListener("mouseleave", () => {
+    cursor.classList.remove("hoverCursor")
+})
+
+
+heroWorkButton.addEventListener("mouseover", () => {
+    heroButtonArrow.classList.add("rotatedArrowOfWork")
+})
+
+
+heroWorkButton.addEventListener("mouseleave", () => {
+    heroButtonArrow.classList.remove("rotatedArrowOfWork")
+})
+
+
+
+heroWorkButton.addEventListener("mouseover", () => {
+    heroWorkButtonBackground.classList.add("workBackgroundOnHover")
+})
+
+
+heroWorkButton.addEventListener("mouseleave", () => {
+    heroWorkButtonBackground.classList.remove("workBackgroundOnHover")
+})
+
+mouse.addEventListener("mouseover", () => {
+    cursor.classList.add("hoverCursor")
+})
+
+
+mouse.addEventListener("mouseleave", () => {
+    cursor.classList.remove("hoverCursor")
+})
+
 

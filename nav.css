@@ -48,6 +48,9 @@ body{
     transition: 0.2s;
     padding-bottom: 1rem;
     padding-top: 0.8rem;
+    -moz-user-select: none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
 }
 
 .navLogo:hover{
@@ -161,6 +164,9 @@ body{
     border-radius: 2.25rem;
     z-index: 8;
     transition: 0.3s;
+    -moz-user-select: none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
 }
 
 
