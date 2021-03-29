@@ -7,9 +7,12 @@ body{
 
 .website{
     display: none;
-    position: absolute;
-    left: 0;
-    top: 0;
+    position:relative;
+    overflow-x:hidden;
+    width: 100vw;
+    height: 100vh;
+    left: 0rem;
+    top: 0rem;
 }
 
 
