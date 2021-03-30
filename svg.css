@@ -15,7 +15,7 @@ svg text {
     stroke: #365fa0;
     font-size: 9rem;
     left: 2rem;
-    z-index: 40;
+    z-index: 4000;
 }
 
 @keyframes stroke {

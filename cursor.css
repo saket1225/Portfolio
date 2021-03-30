@@ -1,6 +1,6 @@
-*{
-    cursor: none;
-}
+    body,html{
+        cursor: none;
+    }
 
 
 .cursor{
@@ -71,16 +71,4 @@
 
 .lightCursorCircle{
     border-color: rgba(10,10,10,0.8);
-}
-
-
-
-@media only screen and (max-width: 1000px){
-    .cursor, .hoverCursor, .cursorCircle, .textCursor, .circleOverMoon{
-        display: none;
-    }
-
-    body{
-        cursor: default;
-    }
 }

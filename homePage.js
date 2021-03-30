@@ -82,6 +82,7 @@ hamburger.addEventListener('click' , () => {
 
 var button = document.querySelector(".button")
 let scrollDownText = document.querySelector('.scrollDownText')
+let downArrowForMobileSvg = document.querySelector('.downArrowForMobileSvg')
 
 var light = false;
 
@@ -122,6 +123,8 @@ toggler.addEventListener('click', () => {
 
         scrollDownText.classList.add('lightScrollText')
 
+        downArrowForMobileSvg.src = "Images/next 2(1).svg"
+
         light = true;
     }
 
@@ -159,6 +162,8 @@ toggler.addEventListener('click', () => {
         heroWorkButtonBackground.classList.remove('lightBackgroundWork')
 
         scrollDownText.classList.remove('lightScrollText')
+
+        downArrowForMobileSvg.src = "Images/next 2.svg"
 
         light = false;
     }
