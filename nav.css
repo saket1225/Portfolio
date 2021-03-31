@@ -15,18 +15,13 @@ body{
 
 
 .website{
-    display: none;
     position:relative;
     overflow-x:hidden;
     width: 100vw;
     height: 100vh;
     left: 0rem;
     top: 0rem;
-}
-
-
-.preloader{
-    display: block;
+    display: none;
 }
 
 .menuOpen{

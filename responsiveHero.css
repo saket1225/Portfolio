@@ -29,7 +29,7 @@
     }
 
     .lighthouse{
-        left: 57vw;
+        left: 60vw;
     }
 }
 
@@ -129,30 +129,10 @@
 }
 
 @media only screen and (min-height: 720px){
-    .mainMoon{
-        width: 25rem;
-        height: 27rem;
-        border-radius: 100rem;
-    }
     .downArrowForMobile{top: 81vh;}
 }
 
 @media only screen and (min-height: 800px){
-    .mainMoon{
-        width: 30rem;
-        height: 30rem;
-    }
-    .hi{top: 0vh;}
-
-    .smallHero{top: 15vh}
-
-    .name{
-        top: 5vh;
-    }
-
-    .lighthouse{
-        top: 25rem;
-    }
     .downArrowForMobile{top: 87vh;}
     .downArrowForMobileSvg{
         top: 0rem;

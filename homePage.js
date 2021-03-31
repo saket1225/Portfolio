@@ -1,13 +1,4 @@
-var preloader = document.querySelector(".preloader");
-var website = document.querySelector(".website");
-
-
-window.addEventListener('load', () => {
-    preloader.style.display = "none";
-    website.style.display = "flex";
-})
-
-
+var html = document.querySelector("html")
 var hamburger = document.querySelector(".hamburgerMenu");
 var rectangle1 = document.querySelector(".rectangle1");
 var rectangle2 = document.querySelector(".rectangle2");
@@ -125,6 +116,8 @@ toggler.addEventListener('click', () => {
 
         downArrowForMobileSvg.src = "Images/next 2(1).svg"
 
+        html.style.backgroundColor = "#f6f6f6"
+
         light = true;
     }
 
@@ -164,6 +157,8 @@ toggler.addEventListener('click', () => {
         scrollDownText.classList.remove('lightScrollText')
 
         downArrowForMobileSvg.src = "Images/next 2.svg"
+
+        html.style.backgroundColor = "#02011e"
 
         light = false;
     }

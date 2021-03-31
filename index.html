@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html>
 <head>
     <title> Saket Dev </title>
@@ -32,12 +32,14 @@
 
 <!-- code here -->
 
-<div class="preloader">
-    <div class="preloaderBackground"></div>
-    <img src="Images/running-gif.gif" class="preloaderGif">
-    <h2 class="loadText">Loading Your Experience</h2>
-    <img src="Images/Any background logo.svg" class="logoOfPreloader">
-</div>
+    <div class="washAway"></div>
+
+    <div class="preloader">
+        <div class="progressBar">
+            <div class="progressOfProgressBar"></div>
+        </div>
+        <h4 class="questionPre"></h4>
+    </div>
 
 <div class="cursorDiv">
     <div class="cursor"></div>
@@ -75,7 +77,7 @@
 
     <div class="hero">
 
-            <div class="moonDiv">
+            <div class="moonDiv" data-speed='-9'>
                 <div class="mainMoon">
                     <div class="dots">
                         <div class="spot1"></div>
@@ -84,7 +86,7 @@
                         <div class="spot4"></div></div></div></div>
 
 
-        <div class="stars">
+        <div class="stars" data-speed='7'>
             <h2 class="star1">.</h2>
             <h2 class="star2">.</h2>
             <h2 class="star3">.</h2>
@@ -92,7 +94,7 @@
             <h2 class="star5">.</h2></div>
 
 
-                <div class="bigStar">
+                <div class="bigStar" data-speed='1'>
                     <h1 class="big1">+</h1>
                     <h1 class="big2">+</h1>
                     <h1 class="big3">+</h1>
@@ -117,7 +119,7 @@
                     <h1 class="heroSkills">WEB DEV.</h1>
                 </div>
 
-    <img src="Images/lighthouse(1).svg" class="lighthouse">
+    <img src="Images/lighthouse(1).svg" class="lighthouse" data-speed='-3'>
 
     <div class="workButton">
         <div class="backgroundButton"></div>
@@ -142,6 +144,7 @@
 
 <script type="text/javascript" src="homePage.js"></script>
 <script type="text/javascript" src="homePage2.js"></script>
+<script type="text/javascript" src="home.js"></script>
 
 
 </body>
