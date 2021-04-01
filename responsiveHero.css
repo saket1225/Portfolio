@@ -43,6 +43,8 @@
         left: 50vw;
     }
 
+    .nameOverlay{display: none;}
+
     .lighthouse{
         left: 50vw;
         width: 10rem;

@@ -4,8 +4,9 @@ svg {
     width: 100%; height: 100%;
     z-index: 30;
     top: -8rem;
-    display: none;
+    left: -1.6rem;
     transition: 0.3s all;
+    opacity: 0;
 }
 
 svg text {
@@ -13,7 +14,7 @@ svg text {
     animation: stroke 5s infinite alternate;
     stroke-width: 2;
     stroke: #365fa0;
-    font-size: 9rem;
+    font-size: 8rem;
     left: 2rem;
     z-index: 4000;
 }
@@ -32,7 +33,6 @@ svg text {
 }
 
 
-
 .hoverName{
-    display: block;
+    opacity: 1;
 }

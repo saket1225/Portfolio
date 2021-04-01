@@ -112,6 +112,8 @@
     -moz-user-select: none;
    -khtml-user-select: none;
    -webkit-user-select: none;
+    animation: moonAnimation 0.5s 1;
+    animation-fill-mode: forwards;
 }
 
 
@@ -171,16 +173,16 @@
 
 .name{
     position: absolute;
-    left: 9rem;
+    left: 8rem;
     color: #7451FF;
     font-size: 3rem;
-    top: -1.5rem;
+    top: -1.7rem;
     font-weight: 600;
     width: 10rem;
     z-index: 45;
+    opacity: 1;
     transition: 0.3s all ease-out;
 }
-
 
 .a{
     position: absolute;
@@ -212,6 +214,8 @@
     -moz-user-select: none;
    -khtml-user-select: none;
    -webkit-user-select: none;
+    animation: moonAnimation 0.5s 1;
+    animation-fill-mode: forwards;
 }
 
 .big1:hover{
@@ -230,6 +234,8 @@
     -moz-user-select: none;
    -khtml-user-select: none;
    -webkit-user-select: none;
+    animation: moonAnimation 0.5s 1;
+    animation-fill-mode: forwards;
 }
 
 .big2:hover{
@@ -248,6 +254,8 @@
     -moz-user-select: none;
    -khtml-user-select: none;
    -webkit-user-select: none;
+    animation: moonAnimation 0.5s 1;
+    animation-fill-mode: forwards;
 }
 
 .big3:hover{
@@ -262,7 +270,10 @@
 
 .moonDiv{
     z-index: 199;
+    animation: moonAnimation 0.8s 1;
+    animation-fill-mode: forwards;
 }
+
 
 .lighthouse{
     position:absolute;
@@ -274,7 +285,10 @@
     -moz-user-select: none;
    -khtml-user-select: none;
    -webkit-user-select: none;
-}
+   opacity: 0;
+   animation: fade 0.2s 0.9s 1;
+   animation-fill-mode: forwards;
+   }
 
 .heroSkills{
     top: 3rem;
@@ -359,8 +373,7 @@
     height: 1rem;
     background-color: #f0f0f0;
     border-radius: 100rem;
-    animation: manimation 0.5s infinite;
-    pointer-events: none;
+    animation: manimation 0.7s infinite;
 }
 
 .scrollDownText{
@@ -377,6 +390,7 @@
     color:#f0f0f0;
 }
 
+
 @keyframes manimation{
     0%,100%{
         top: 0.4rem;
@@ -386,4 +400,16 @@
         top: 0.6rem;
     }
 }
-s
+
+@keyframes fade{
+    0%{opacity: 0}
+    100%{opacity: 1}
+}
+
+
+
+@keyframes moonAnimation{
+    0%{rotate:0deg; opacity: 0}
+    50%{opacity: 0}
+    100%{rotate:360deg; opacity: 1}
+}
