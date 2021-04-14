@@ -19,3 +19,4 @@ var question = ['What is your brand story?', 'I give a 100/100 on every project'
 
 randomQuestion =  question[Math.floor(Math.random() * question.length)];
 questionElement.innerHTML = randomQuestion
+
