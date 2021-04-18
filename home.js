@@ -3,7 +3,7 @@ var website = document.querySelector(".website");
 var html = document.querySelector("html")
 let navMenu = document.querySelector(".navMenu")
 
-preloaderVar = setTimeout(preloaderFunc, 2700);
+preloaderVar = setTimeout(preloaderFunc, 2600);
 
 function preloaderFunc() {
     preloader.style.display = "none";
